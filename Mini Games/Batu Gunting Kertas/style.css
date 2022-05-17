@@ -1,0 +1,72 @@
+html, body, * {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: darkgray;
+}
+
+.matchBox {
+	display: flex;
+	justify-content: center;
+}
+
+.match {
+	margin-top: 10px;
+	margin-right: 7px;
+	padding-top: 5px;
+	border: 3px solid dimgray;
+	width: 200px;
+	height: 300px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.result {
+	margin-top: 92px;
+	margin-bottom: 92px;
+	margin-left: 7px;
+	padding-top: 5px;
+	border: 3px solid dimgray;
+	width: 200px;
+	height: 125px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+#player, #kamu, #bot {
+	display: inline-flex;
+	justify-content: center;
+	margin : 5px 5%;
+}
+
+#kamu, #bot {
+	font-size: 50px;
+}
+
+
+
+
+.choice {
+	margin: 20px 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+.option {
+	margin: 0 10px;
+	width: 30%;
+	padding: 25px;
+	background-color: lightgray;
+	text-align: center;	
+	border-radius: 5px;
+	font-size: 150%;
+}
+.option:hover {
+	cursor: pointer;
+	background-color: dimgray;
+	transition: cubic-bezier(0.215, 0.61, 0.355, 1) ease-in-out;
+	transform: scale(105%);
+	font-size: 155%;
+}

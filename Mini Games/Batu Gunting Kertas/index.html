@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Mini Games</title>
+</head>
+<body>
+	<div class="matchBox">
+		<div class="match">
+			<h2>Pertandingan</h2>
+			<br>
+			<div id="player">Kamu</div><br>
+			<div id="kamu">🤝</div><br>
+			<div class="vs">VS</div><br>
+			<div id="player">romBot</div><br>
+			<div id="bot">🤝</div>
+			<!--<div id="match"></div>-->
+		</div>
+		<div class="result">
+			<h1>Hasil</h1>
+			<br>
+			<div id="result">Ayo Main! 😀</div>
+		</div>
+	</div>
+
+	<div class="choice">
+		<div class="option" onclick="pickOption('✊')">✊</div>
+		<div class="option" onclick="pickOption('✌')">✌</div>
+		<div class="option" onclick="pickOption('🖐')">🖐</div>
+	</div>
+
+<script>
+	// Menangkap pilihan player
+	function pickOption(player){
+		// console.log("memilih ", player);
+
+		// Menangkap pilihan computer
+		var bot = Math.random();
+
+		if(bot < 0.34){
+			bot = '✊';
+		}
+		else if(bot >= 0.34 && bot < 0.67){
+			bot = '✌';
+		}
+		else{
+			bot = '🖐';
+		}
+		// console.log (bot);
+
+		// Peraturan
+		// var player = pickOption;
+		var hasil = '';
+
+		if (player == bot){
+			hasil = 'Wahhh.. Seriii 🤪';
+		}
+		else if (player == '✊'){
+			hasil = (bot == '🖐') ? 'Kamu kalah!😞' : '🎉Kamu menang!🥳';
+		}
+		else if (player == '🖐'){
+			hasil = (bot == '✊') ? '🎉Kamu menang!🥳' : 'Kamu kalah!😞';
+		}
+		else if (player == '✌'){
+			hasil = (bot == '🖐') ? '🎉Kamu menang!🥳' : 'Kamu kalah!😞';
+		}
+		console.log('Kamu memilih ' + player + '\nromBot memilih ' + bot +  '\n' + hasil);
+
+		// DOM?
+		var kamu = document.getElementById("kamu");
+		var romBot = document.getElementById("bot");
+		var result = document.getElementById("result");
+
+		kamu.textContent = player;
+		romBot.textContent = bot;
+		result.textContent = hasil;
+
+
+		// var match = document.getElementById("match");
+
+		// match.textContent = player + 'VS' + bot; 
+	}
+</script>
+</body>
+</html>
