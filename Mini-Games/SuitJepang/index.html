@@ -67,17 +67,32 @@
 		else if (player == '✌'){
 			hasil = (bot == '🖐') ? '🎉Kamu menang!🥳' : 'Kamu kalah!😞';
 		}
-		console.log('Kamu memilih ' + player + '\nromBot memilih ' + bot +  '\n' + hasil);
+		// console.log('Kamu memilih ' + player + '\nromBot memilih ' + bot +  '\n' + hasil);
 
 		// DOM?
 		var kamu = document.getElementById("kamu");
 		var romBot = document.getElementById("bot");
 		var result = document.getElementById("result");
 
-		kamu.textContent = player;
-		romBot.textContent = bot;
-		result.textContent = hasil;
+		kamu.textContent = '';
+		romBot.textContent = '...';
+		result.textContent = 'Tunggu ya, romBot lagi mikir... 🤔'
+		
+		setTimeout(() => {
+			romBot.textContent = bot;
+		},2000);
+		setTimeout(() => {
+			result.textContent = hasil;
+		},2300);
 
+		kamu.textContent = player;
+		// romBot.textContent = bot;
+		// result.textContent = hasil;
+		setTimeout(() => {
+			console.log('Kamu memilih ' + player + '\nromBot memilih ' + bot +  '\n' + hasil);
+		},2600);
+		
+		
 
 		// var match = document.getElementById("match");
 
