@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>Aromakelapa | Share Everything I Know</title>
+</head>
+<body>
+	<div class="navbar cf">
+		<h1 class="home"><a href="#">Aromakelapa</a></h1>
+		<ul>
+			<li><a href="#">Flash HP</a></li>
+			<li><a href="#">Trik</a></li>
+			<li ><a href="#">Config</a></li>
+		</ul>
+	</div>
+
+	<div class="container">
+		<div class="header">
+			<h1>Aromakelapa</h1>
+			<p>Share Everything i Know</p>
+		</div>
+		
+		<div class="content">
+			<h4>Recent Post</h4>
+			<input id="searchbar" onkeyup="search_animal()" class="cf" type="text" name="search" placeholder="Search post..." >
+			<div class="post">
+				<div class="article">
+					<h3><a href="#">Postingan pertama : Mini Games !</a></h3>
+					<p class="writer">Oleh <a href="#">Admin</a> pada 20 Mei 2022</p>
+					<p>Langsung aja, sehabis nonton seri HTML, CSS, Javascript nya Pak Sandhika Galih, akhirnya ku coba membuat sebuah Web Sederhana sesuai yang ku pelajari, dan inilah hasilnya 😀 [..]</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="footer">
+				<p>Copyright <a href="">Aromakelapa</a> 2022.</p>
+		</div>
+	</div>
+
+	<script>
+			// JavaScript code
+	function search_animal() {
+	    let input = document.getElementById('searchbar').value
+	    input=input.toLowerCase();
+	    let x = document.getElementsByClassName('article');
+	      
+	    for (i = 0; i < x.length; i++) { 
+	        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+	            x[i].style.display="none";
+	        }
+	        else {
+	            x[i].style.display="list-item";                 
+	        }
+	    }
+	}
+		</script>
+</body>
+</html>
