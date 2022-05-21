@@ -24,7 +24,7 @@
 		
 		<div class="content">
 			<h4>Recent Post</h4>
-			<input id="searchbar" onkeyup="search_animal()" class="cf" type="text" name="search" placeholder="Search post..." >
+			<input id="searchbar" onkeyup="search_post()" class="cf" type="text" name="search" placeholder="Search post..." >
 			<div class="post">
 				<div class="article">
 					<h3><a href="#">Postingan pertama : Mini Games !</a></h3>
@@ -42,7 +42,7 @@
 
 	<script>
 			// JavaScript code
-	function search_animal() {
+	function search_post() {
 	    let input = document.getElementById('searchbar').value
 	    input=input.toLowerCase();
 	    let x = document.getElementsByClassName('article');
