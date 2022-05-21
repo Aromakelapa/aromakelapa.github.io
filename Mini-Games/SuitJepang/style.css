@@ -310,5 +310,6 @@ h1, h2, p, div {
 	
 	.result {
 		font: 12px/16px monospace,monospace;
-	}
+	        height: 50px;
+        }
 }
