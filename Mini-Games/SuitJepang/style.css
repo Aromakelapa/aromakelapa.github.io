@@ -307,7 +307,8 @@ h1, h2, p, div {
 	.match h2 {
 		font-size: 20px;
 	}
-	.result h1 {
-		font-size: 20px;
+	
+	.result {
+		font: 16px;
 	}
 }
