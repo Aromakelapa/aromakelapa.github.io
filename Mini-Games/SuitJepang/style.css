@@ -309,6 +309,6 @@ h1, h2, p, div {
 	}
 	
 	.result {
-		font: 16px;
+		font: 12px/16px monospace,monospace;
 	}
 }
