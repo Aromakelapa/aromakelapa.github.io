@@ -315,8 +315,11 @@ html body a:hover {
 	}
 
 	.isi .img {
-	width: 100%%;
+	width: 50%;
 	margin: 0 auto;
 	padding: 10px;
+	}
+	.isi .img img{
+		width: 250px;
 	}
 }
