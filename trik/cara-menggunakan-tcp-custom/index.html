@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>Cara Menggunakan TCP Custom</title>
+</head>
+<body>
+	<div class="navbar cf">
+		<h1 class="home cf"><a href="https://aromakelapa.github.io">Aromakelapa</a></h1>
+		<ul>
+			<li><a href="#">Flash HP</a></li>
+			<li><a href="#">Trik</a></li>
+			<li ><a href="#">Config</a></li>
+		</ul>
+	</div>
+
+	<div class="container">
+		<div class="header">
+			<h1>Aromakelapa</h1>
+			<p>Share Everything Trick i Know</p>
+		</div>
+		<div class="content">
+			<div class="dir">
+				<p>
+					<a href="https://aromakelapa.github.io/">Home</a> / 
+					<a href="https://aromakelapa.github.io/">Trik Internet</a> /
+					Cara Menggunakan TCP Custom Untuk Inject Paket Ketengan
+				</p>
+			</div>
+			<div class="post">
+				<div class="article">
+					<h3>Cara Menggunakan TCP Custom Untuk Inject Paket Ketengan <br>Metode Websockect CDN CloudFront</h3>
+					<p class="writer">Oleh <a href="#">Admin</a> pada 20 Mei 2022</p>
+					<!-- ISI POST -->
+					<div class="isi">
+
+						<p>Karena sekarang lagi ramai inject paket ketengan menggunakan bug CDN CloudFront, tentu saja akun SSH susah didapat. Bisa sih bisa, dan itu pun harus stand by jam reset server atau siapa cepat dia dapat untuk mendapatkan akun SSH CDN CloudFront. Maka dari itu Dev Art of Tunnel membuat aplikasi TCP Custom dengan mengadakan fitur inject metode Websocket CDN CloudFront dan CDN Cloudflare tanpa membuat akun SSH / Protokol lainnya. Dan disini saya inisiatif membuat cara menggunakannya dengan metode Websocket CDN CloudFront.</p>
+
+						<h5>Apa Itu TCP Custom ?</h5>
+						<div class="img"><img src="ss.png"></div>
+						<p>TCP Custom yaitu aplikasi inject paket ketengen seperti yang lainnya, tetapi yang paling menariknya TCP Custom memiliki fitur metode inject dengan hanya memasukan bug host nya saja.</p>
+							<div class="note">Sumber : Menurut saya pribadi</div>
+						
+						<p>TCP Custom yaitu aplikasi inject paket ketengen seperti yang lainnya, tetapi yang paling menariknya TCP Custom memiliki fitur metode inject dengan hanya memasukan bug host nya saja.</p>
+							<div class="note">Sumber : <a href="https://play.google.com/store/apps/details?id=com.artoftunnel.tcpcustom">Play Store</a></div>
+
+						<h5>Cara Menggunakan TCP Custom</h5>
+
+						<ul>
+							<li>1. Pertama download dulu dong pastinya di <a href="https://play.google.com/store/apps/details?id=com.artoftunnel.tcpcustom">Play Store</a>.</li>
+							<li>2. Sambil menunggu download selesai, siapkan bug nya</li>
+							<div class="note">Disini saya menggunakan bug kuota Axis Game ya. <br>
+								Untuk cara menemukan bug paketan lain baca <a href="">Artikel ini.</a></div>
+							<div class="note"></div>
+							<li>3. Buka aplikasi nya.</li>
+							<li>4. Tap ikon menu di pojok kiri atas atau swipe dari sisi kiri ke kanan.</li>
+							<li>5. Lalu tap General Settings, tap Setup Mode, dan pilih Websocket Mode.</li>
+							<li>6. Pada kolom input, masukan bug.</li>
+							<li>7. Tap ikon Setting / Garis tiga di kanan, lalu pilih CDN Amazon CloudFront.</li>
+							<div class="img"><img src="ss3.png"></div>
+							<li>8. Dan terakhir tap Connect, maka akan tampil seperti gambar di bawah.</li>
+							<div class="img"><img src="ss2.png"></div>
+							<div class="note">Jika ingin memperpanjang durasinya, tinggal tap durasi.</div>
+							<div class="note">Dan jika ingin mengganti region nya, di menu tap Preferred Location, lalu pilih region yang diinginkan.</div>
+
+							<h5>Penutup</h5>
+							<p>Dan itulah cara menggunakan TCP Custom dengan metode Websocket CDN CloudFront, sekian terimakasih untuk berkunjung dan mohon maaf bila ada salah kata atau menyinggung.</p>
+							<div class="note">Jika ada masalah tidak connect, sunek, bengong atau ada masalah lain terkait artikel, silahkan berkomentar.</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="disqus_thread"></div>
+		</div>
+
+		
+
+		<div class="footer">
+				<p>Copyright <a href="">Aromakelapa</a> 2022.</p>
+		</div>
+	</div>
+
+	<script>
+			// JavaScript code
+	function search_post() {
+	    let input = document.getElementById('searchbar').value
+	    input=input.toLowerCase();
+	    let x = document.getElementsByClassName('article');
+	      
+	    for (i = 0; i < x.length; i++) { 
+	        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+	            x[i].style.display="none";
+	        }
+	        else {
+	            x[i].style.display="list-item";                 
+	        }
+	    }
+	}
+
+	// Comment
+	/**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    
+    var disqus_config = function () {
+    this.page.url = "https://aromakelapa.github.io/test-page/";  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = "cara-menggunakan-tcp-custom"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://aromanaga.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+		</script>
+</body>
+</html>
