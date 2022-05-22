@@ -144,30 +144,37 @@ html body a:hover {
 
 .post {
 	width: 100%;
-	height: 690px;
-	overflow: auto;
+}
+
+.title {
+	text-align: center;
+	color: #eaeaea;
+	margin-bottom: 20px;
+	font-weight: bold;
 }
 
 .article {
-	margin: 10px 10px;
+	margin: 10px 0;
+	padding: 20px 10px;
+	border-top: 1px solid grey;
 	border-bottom: 1px solid grey;
-	padding: 10px 0;
 }
 
-.article h3 a {
-	font-size: 20px;
+.article h3 {
+	font: 20px/25px monospace,monospace;
 	text-decoration: none;
 	color: #eaeaea;
 	font-weight: bold;
 }
 
 .article p {
-	padding: 0 5px;
+	margin-left: 10px;
+	margin-bottom: 10px;
 	font: 14px/18px monospace,monospace;
 }
 
 .article .writer {
-	padding: 5px 20px;
+	margin-left: 20px;
 	font-size: 12px;
 	color: grey;
 }
@@ -224,7 +231,34 @@ html body a:hover {
 	}
 
 }
+/*@media (max-width: 720px) {
+	.container {
+		width: 500px;
+	}
 
+	.content h4 {
+		font-size: 14px;
+	}
+
+	#searchbar {
+		height: 20px;
+	}
+
+	.article h3 a {
+		font-size: 15px;
+	}
+
+	.article p {
+		padding: 0 1px;
+	}
+
+	.article .writer {
+		font-size: 8px;
+	}
+	.article .description {
+		font-size: 11px;
+	}
+}*/
 
 @media (max-width: 640px) {
 	.navbar {
@@ -252,7 +286,6 @@ html body a:hover {
 	.header {
 		margin: 0 10px 20px;
 		font-size: 30px;
-
 	}
 
 	.header p {
@@ -260,11 +293,19 @@ html body a:hover {
 		margin-top: 5px;
 	}
 
-	.content {
-		margin: 10px;
+	.article h3 {
+		font-size: 15px;
+		line-height: 19px;
 	}
 
-	.article .description {
-		font: 12px/16px monospace,monospace;
+	.article p {
+		font: 13px/16px monospace,monospace;
+	
+	}
+
+	.article .writer {
+		font-size: 11px;
+		padding: 5px 0;
 	}
 }
+
