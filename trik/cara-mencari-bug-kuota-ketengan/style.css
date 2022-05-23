@@ -349,6 +349,11 @@ html body .article .isi a:hover {
 		line-height: 18px;
 	}
 
+	.isi .terminal {
+		display: block;
+		overflow: auto;
+	}
+
 	.isi .img1 {
 		width: 333px;
 		margin: 5px auto;
