@@ -345,6 +345,10 @@ html body .article .isi a:hover {
 		line-height: 18px;
 	}
 
+	.isi p {
+		line-height: 18px;
+	}
+
 	.isi .img1 {
 		width: 333px;
 		margin: 5px auto;
