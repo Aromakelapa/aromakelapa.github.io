@@ -46,7 +46,7 @@ table {
 /* Style CSS */
 body {
 	font-family: monospace, monospace;
-	background-color: #313131;
+	background-color: #0d1117;
 }
 p, h5, li{ color: #eaeaea; }
 
@@ -60,13 +60,22 @@ html body a:hover {
 	color: lightskyblue;
 }
 
+html body .article .isi a {
+	font-size: 13px;
+	color: lightskyblue;
+}
+
+html body .article .isi a:hover {
+	color: #eaeaea;
+}
+
 .navbar {
 	width: 100%;
 	height: 60px;
 	border-bottom: 1px solid grey;
 	position: fixed;
 	top: 0;
-	background-color: #313131;
+	background-color: #0d1117;
 	box-sizing: border-box;
 	padding: 20px;
 }
@@ -211,7 +220,7 @@ html body a:hover {
 	margin-left: 20px;
 	margin-bottom: 10px;
 	font-size: 14px;
-	line-height: 17px;
+	line-height: 18px;
 	color: grey;
 	border-left: 3px solid #eaeaea;
 }

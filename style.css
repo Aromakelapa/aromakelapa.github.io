@@ -46,7 +46,7 @@ table {
 /* Style CSS */
 body {
 	font-family: monospace, monospace;
-	background-color: #313131;
+	background-color: #0d1117;
 }
 p { color: #eaeaea; }
 
@@ -66,7 +66,7 @@ html body a:hover {
 	border-bottom: 1px solid grey;
 	position: fixed;
 	top: 0;
-	background-color: #313131;
+	background-color: #0d1117;
 	box-sizing: border-box;
 	padding: 20px;
 }

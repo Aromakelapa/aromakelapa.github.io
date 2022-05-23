@@ -48,7 +48,7 @@ body {
 	font-family: monospace, monospace;
 	background-color: #0d1117;
 }
-p { color: #eaeaea; }
+p, h5, li{ color: #eaeaea; }
 
 html body a {
 	color: #eaeaea;
@@ -58,6 +58,15 @@ html body a {
 
 html body a:hover {
 	color: lightskyblue;
+}
+
+html body .article .isi a {
+	font-size: 13px;
+	color: lightskyblue;
+}
+
+html body .article .isi a:hover {
+	color: #eaeaea;
 }
 
 .navbar {
@@ -122,7 +131,7 @@ html body a:hover {
 	margin-top: 50px;
 	border-top: 1px solid grey;
 	border-bottom: 1px solid grey;
-	padding: 20px;
+	padding: 10px 10px;
 }
 
 .content h4 {
@@ -133,9 +142,115 @@ html body a:hover {
 	display: inline-block;
 }
 
+.content .dir {
+	font-size: 13px;
+	text-align: center;
+	line-height: 18px;
+	padding: 10px 0;
+	font-weight: bold;
+}
+
+#searchbar {
+	margin: 5.5px 5px;
+	float: right;
+	border-radius: 20px;
+	padding: 0 10px;
+	height: 25px;
+	border: 1px solid grey;
+}
+
 .post {
 	width: 100%;
-	overflow: auto;
+}	
+
+
+.article {
+	margin: 10px 10px;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	padding: 10px 0;
+}
+
+.article h3 {
+	font: 20px/20px monospace,monospace;
+	line-height: 25px;
+	color: #eaeaea;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*.article p {
+	text-align: center;
+	font: 14px/18px monospace,monospace;
+}*/
+
+.writer {
+	text-align: center;
+	padding: 5px 0 20px;
+	font-size: 13px;
+	color: grey;
+}
+
+.isi .img1 {
+	background-image: url("https://user-images.githubusercontent.com/41558/111915750-1bad8f80-8a78-11eb-951a-d5da1adc2bdc.png");
+	width: 440px;
+	height: 410px;
+	margin: 10px auto;
+	border-radius: 10px;
+}
+
+.isi .img2 {
+	background-image: url(ss1.jpg);
+	background-size: cover;
+	width: 440px;
+	height: 187px;
+	margin: 0 auto 10px;
+	border-radius: 10px;
+	
+}
+
+.isi h5 {
+	padding: 10px 10px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.isi p {
+	text-align: left;
+	font-size: 14px;
+	line-height: 18px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+
+.isi .note {
+	padding-left: 10px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 18px;
+	color: grey;
+	border-left: 3px solid #eaeaea;
+}
+
+.isi ul li {
+	margin-left: 20px;
+	line-height: 18px;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.isi .terminal {
+	font-size: 13px;
+	color: #eaeaea;
+	background-color: #161b22;
+	display: inline-block;
+	line-height: 25px;
+	border-left: 5px solid #eaeaea;
+	border-radius: 5px;
+	margin: 0 40px 10px;
+	padding: 10px 20px 10px 10px ;
 }
 
 .footer {
@@ -167,18 +282,26 @@ html body a:hover {
 	.content h4 {
 		font-size: 16px;
 	}
-}
 
-@media (max-width: 720px) {
-	.container {
-		width: 500px;
+	#searchbar {
+		height: 21px;
+		margin: 6.5px 5px;
 	}
 
-	.content h4 {
+	.article h3 a {
+		font-size: 17px;
+	}
+
+	.article .writer {
+		font-size: 10px;
+	}
+
+	.article .description {
 		font-size: 14px;
 	}
 
 }
+
 
 @media (max-width: 640px) {
 	.navbar {
@@ -204,7 +327,7 @@ html body a:hover {
 	}
 
 	.header {
-		margin: 0 10px 20px 0;
+		margin: 0 10px 20px;
 		font-size: 30px;
 
 	}
@@ -217,98 +340,20 @@ html body a:hover {
 	.content {
 		margin: 10px;
 	}
-}
 
-/*CSS Post*/
-
-h1, h2, p, div {
-	color: #eaeaea;
-}
-
-.matchBox {
-	display: flex;
-	justify-content: center;
-}
-
-.match {
-	margin-top: 10px;
-	margin-right: 7px;
-	padding-top: 20px;
-	border: 1px solid #eaeaea;
-	width: 200px;
-	height: 270px;
-	text-align: center;
-	border-radius: 5px;
-}
-.match h2 {
-	font-size: 25px;
-	font-weight: bold;
-}
-
-.result {
-	margin-top: 92px;
-	margin-bottom: 92px;
-	margin-left: 7px;
-	padding: 20px 10px;
-	border: 1px solid #eaeaea;
-	width: 200px;
-	height: 80px;
-	text-align: center;
-	border-radius: 5px;
-}
-
-.result h1 {
-	font-size: 25px;
-	font-weight: bold;
-}
-
-#player, #kamu, #bot {
-	display: inline-flex;
-	justify-content: center;
-	margin : 5px 5%;
-}
-
-#kamu, #bot {
-	font-size: 50px;
-}
-
-
-
-
-.choice {
-	margin: 20px 15px;
-	display: flex;
-	justify-content: center;
-	align-items: center;	
-}
-
-.option {
-	margin: 0 10px;
-	width: 30%;
-	padding: 25px;
-	background-color: dimgray;
-	text-align: center;	
-	border-radius: 5px;
-	font-size: 150%;
-}
-.option:hover {
-	cursor: pointer;
-	background-color: #424242;
-	transition: cubic-bezier(0.215, 0.61, 0.355, 1) ease-in-out;
-	transform: scale(105%);
-	font-size: 155%;
-}
-
-.option:active {
-	background-color: dimgray;
-}
-
-@media (max-width: 640px){
-	.match h2 {
-		font-size: 20px;
+	.isi ul li {
+		line-height: 18px;
 	}
-	
-	.result {
-		font: 12px/16px monospace,monospace;
+
+	.isi .img1 {
+		width: 333px;
+		margin: 5px auto;
+
 	}
+	.isi .img2 {
+		width: 333px;
+		height: 145px;
+		margin: 0 auto 10px;
+	}
+
 }
